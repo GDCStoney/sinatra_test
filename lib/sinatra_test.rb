@@ -27,5 +27,6 @@ get '/hello/:name' do |name|
 end
 
 get '/dog' do
-  erb(:index)
+  @random_name = ["Amigo", "Oscar", "Viking", "Ruby God"].sample
+  erb :index
 end
